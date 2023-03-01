@@ -1,0 +1,357 @@
+.depilacion{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .depilacion-img {
+        opacity: 100%;
+        height: 10vh;
+        // background-image: url(../resources/depilacion.jpg);
+        // background-size: cover;
+        // background-position: 50% 75%;
+        text-align: center;
+
+        h3{
+            color: $border-primary;
+            font-weight: 800;
+            font-size: 45px;
+            text-shadow: 1px 1px 2px $color-primario-btn;
+            opacity: 100%;
+        }
+    }
+
+    @media screen and (min-width: 100px) and (max-width: 899px){
+        .depilacion-img {
+        h3{ 
+            
+            font-size: 5vh;
+        }
+    }
+}
+    
+}
+
+.depilacion__Container{
+    padding: 20px 0px 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .depilacion__Cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50vw;
+        height: fit-content;
+        margin: 5px;
+        transition: all 1s;
+        border-radius: 40px;
+        text-align: center;
+        box-shadow: 10px 10px 18px 0px rgba(179,179,179,0.75);
+        -webkit-box-shadow: 10px 10px 18px 0px rgba(179,179,179,0.75);
+        -moz-box-shadow: 10px 10px 18px 0px rgba(179,179,179,0.75);
+
+        .depilacion__Cards-img{
+            width: 20vw;
+            height: 15vh;
+            object-fit: cover;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 40px;
+                object-position: 0% 60%;            
+            }
+        }
+        .depilacion__Cards-content{
+            h3{
+                text-transform: uppercase;
+                color: $color-primario-btn;
+                font-weight: 800;
+            }
+        }
+    }
+        .depilacion__Cards:hover{
+        background: #dfdfdf;
+        box-shadow: 10px 10px 18px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 10px 10px 18px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 18px 0px rgba(0,0,0,0.75);
+    }
+
+    @media screen and (min-width: 100px) and (max-width: 899px){
+        .especialidad-button{
+            
+            button{
+            font-size: 12px;
+            font: bold;
+            padding: 6px 12px;
+            display: none;
+            }
+        }
+        .depilacion__Cards{
+            padding: 0px 0 10px 0;
+            width: 90vw;
+            height: fit-content;
+            font-size: 13px;
+
+            .depilacion__Cards-img{
+                width: 100%;
+            }
+
+            .depilacion__Cards-content{
+                h3{
+                    padding-top: 10px;
+                    font-size: 4vh;
+                }
+            }
+        }
+    }
+}
+    
+.tratamientosFaciales {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .tratamientosFaciales-img {
+        opacity: 100%;
+        height: 10vh;
+        // background: url(../../resources/limpiezaFacial.jpg);
+        // background-size: cover;
+        // background-position: 0% 28%;
+        text-align: center;
+
+        h3{
+            color: $border-primary;
+            font-weight: 800;
+            font-size: 45px;
+            text-shadow: 1px 1px 2px $color-primario-btn;
+            opacity: 100%;
+            
+            @media screen and (min-width: 100px) and (max-width: 899px){
+                
+                font-size: 5vh;
+                
+            }
+        }
+    }
+}
+
+.tratamientosFaciales__Container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 0px 20px 0px;
+
+    .tratamientosFaciales__Cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 30vw;
+        height: 50vh;
+        margin: 5px;
+        transition: all 1s;
+        border-radius: 40px;
+        text-align: center;
+        box-shadow: 10px 10px 18px 0px rgba(179,179,179,0.75);
+        -webkit-box-shadow: 10px 10px 18px 0px rgba(179,179,179,0.75);
+        -moz-box-shadow: 10px 10px 18px 0px rgba(179,179,179,0.75);
+        padding: 0;
+        
+
+        .tratamientosFaciales__Cards-img {
+            width: 20vw;
+            height: 15vh;
+            object-fit: cover;
+            
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 40px;                
+                }
+        }
+
+        .tratamientosFaciales__Cards-content{
+            h3{
+                text-transform: uppercase;
+                color: $color-primario-btn;
+                font-weight: 800;
+            }
+        }
+    }
+    .tratamientosFaciales__Cards:hover{
+        background: #dfdfdf;
+        box-shadow: 10px 10px 18px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 10px 10px 18px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 18px 0px rgba(0,0,0,0.75);
+    }
+
+    @media screen and (min-width: 900px) and (max-width: 1500px){
+        .tratamientosFaciales__Cards {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            width: 40vw;
+            height: fit-content;
+            padding: 10px 0 10px 0;
+
+            .tratamientosFaciales__Cards-img {
+                
+            }
+        }
+        .tratamientosFaciales__Cards-content{
+            h3{
+                padding-top: 10px;
+            }
+        }
+
+    }
+
+    @media screen and (min-width: 100px) and (max-width: 899px){
+        .especialidad-button{
+            
+            button{
+            font-size: 12px;
+            font: bold;
+            padding: 6px 12px;
+            display: none;
+            }
+        }
+
+        .tratamientosFaciales__Cards {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            width: 90vw;
+            height: fit-content;
+            padding: 0 0 10px 0;
+            font-size: 13px;
+
+            .tratamientosFaciales__Cards-img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .tratamientosFaciales__Cards-content{
+            h3{
+                padding-top: 10px;
+            }
+        }
+    }
+}
+
+.tratamientosCorporales {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .tratamientosCorporales-img {
+        opacity: 100%;
+        height: 10vh;
+        // background-image: url(../resources/tratamientosCorporales.jpg);
+        // background-size: cover;
+        // background-position: 90%;
+        text-align: center;
+
+        h3{
+            color: $border-primary;
+            font-weight: 800;
+            font-size: 45px;
+            text-shadow: 1px 1px 2px $color-primario-btn;
+            opacity: 100%;
+
+            @media screen and (min-width: 100px) and (max-width: 899px){
+                // margin-top: 18px;
+                font-size: 5vh;
+                
+            }
+        }
+    }
+}
+
+.tratamientosCorporales__Container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 10px;
+
+    .tratamientosCorporales__Cards {
+        display: flex;
+        flex-direction: column;
+        width: 40vw;
+        height: fit-content;
+        margin: 5px;
+        text-align: center;
+        transition: all 1s;
+        border-radius: 40px;
+        text-align: center;
+        align-items: center;
+        box-shadow: 10px 10px 18px 0px rgba(179,179,179,0.75);
+        -webkit-box-shadow: 10px 10px 18px 0px rgba(179,179,179,0.75);
+        -moz-box-shadow: 10px 10px 18px 0px rgba(179,179,179,0.75);
+        padding: 0;
+
+        .tratamientosCorporales__Cards-img {
+            width: 20vw;
+            height: 15vh;
+            object-fit: cover;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 40px;
+            }
+        }
+
+        .tratamientosCorporales__Cards-content{
+                h3{
+                    text-transform: uppercase;
+                    color: $color-primario-btn;
+                    font-weight: 800;
+                }
+        }
+    }
+    .tratamientosCorporales__Cards:hover{
+            background: #dfdfdf;
+            box-shadow: 10px 10px 18px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 10px 10px 18px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 18px 0px rgba(0,0,0,0.75);
+        }   
+    
+    @media screen and (min-width: 100px) and (max-width: 899px){
+        .especialidad-button{
+            
+            button{
+            font-size: 12px;
+            font: bold;
+            padding: 6px 12px;
+            display: none;
+            }
+        }
+
+        .tratamientosCorporales__Cards {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            width: 90vw;
+            height: fit-content;
+            padding: 0px 0 10px 0;
+            font-size: 13px;
+
+            .tratamientosCorporales__Cards-img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .tratamientosCorporales__Cards-content{
+            h3{
+                padding-top: 10px;
+            }
+        }
+    }
+}

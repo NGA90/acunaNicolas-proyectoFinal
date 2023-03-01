@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body {
+    background: #c3c6c432;
+    min-height: 100vh;
+}
+
+.btn {
+    background: $color-primario-btn;
+    color: #fff;
+    font-size: 16px;
+    font: bold;
+    padding: 12px 24px;
+    border: 2px solid $border-primary;
+    cursor: pointer;
+    border-radius: 5px;
+    transition-property: background;
+    transition-duration: 0.7s;
+}
+.btn:hover {
+    background-color: $color-hover-btn;
+    border: 2px solid #fff;
+    color: #fff;
+}
+a:visited {
+    color: #000;
+}

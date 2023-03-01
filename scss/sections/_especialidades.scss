@@ -1,0 +1,136 @@
+main{
+    h1{
+        padding-top: 70px;
+        font-weight: 800;
+        font-size: 30px;
+        color: $border-primary;
+        text-align: center;
+        text-shadow: 1px 1px 2px $color-primario-btn;
+        }
+    }
+
+
+.especialidad {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+
+        .especialidad__card {
+            padding-top: 10px;
+            padding-bottom: 2px;
+            margin: 5px;
+            width: 60vh;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 20px;
+            transition-property: background, box-shadow;
+            transition-duration: 1s;
+            box-shadow: 10px 10px 18px 0px rgba(179,179,179,0.75);
+        -webkit-box-shadow: 10px 10px 18px 0px rgba(179,179,179,0.75);
+        -moz-box-shadow: 10px 10px 18px 0px rgba(179,179,179,0.75);
+            
+            .especialidad__card__img{
+
+                img{
+                    min-width: 50%;
+                }
+            }
+
+            button{
+                background-color: $color-primario-btn;
+                color: #fff;
+                font-size: 16px;
+                font: bold;
+                padding: 5px 10px;
+                border: 2px solid $border-primary;
+                cursor: pointer;
+                border-radius: 5px;
+                transition-property: background, border;
+                transition-duration: 1s;
+
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+
+            button:hover{
+                background: $color-hover-btn;
+                border: 2px solid #000000;
+            }
+        }
+        .especialidad__card:hover {
+            background: #dfdfdf;
+            box-shadow: 10px 10px 18px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 10px 10px 18px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 18px 0px rgba(0,0,0,0.75);
+        }
+
+        .especialidad__card__content{
+
+            h3{
+                text-transform: uppercase;
+                color: $color-primario-btn;
+                padding: 5px;
+                font-weight: 800;
+            }
+
+            p{
+                text-align: center;
+                padding: 5px;
+            }
+        }
+
+    @media screen and (min-width: 800px) and (max-width: 1200px){
+        justify-content: center;
+
+        .especialidad__card {
+            width: 40vw;
+            height: fit-content;
+            justify-content: flex-start;
+            padding: 10px 0 10px 0;
+        }
+    }
+
+    @media screen and (min-width: 100px) and (max-width: 799px){
+        justify-content: center;
+
+        .especialidad__card {
+            width: 90vw;
+            height: fit-content;
+            justify-content: flex-start;
+            padding: 10px 0 10px 0;
+            font-size: 13px;
+            margin: 10px 0 10px 0;
+
+                button{
+                    font-size: 12px;
+                    font: bold;
+                    padding: 6px 12px;  
+                    display: none;   
+                }
+
+                .especialidad__card__img{
+
+                    img{
+                        max-width: 80px;
+                    }
+        }
+        
+        .especialidad__card__content{
+
+            h3{
+                font-size: 20px;
+            }
+        }
+    }
+    }
+}
