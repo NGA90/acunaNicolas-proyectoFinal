@@ -20,7 +20,8 @@ body {
   cursor: pointer;
   border-radius: 5px;
   transition-property: background;
-  transition-duration: 0.7s; }
+  transition-duration: 0.7s;
+  text-transform: uppercase; }
 
 .btn:hover {
   background-color: #5f4ff7;
@@ -359,12 +360,40 @@ a:visited {
     bottom: 55%;
     left: 30%; } }
 
+.trabajo {
+  margin-top: 1em;
+  height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 10px 10px 18px 0px rgba(179, 179, 179, 0.75);
+  -webkit-box-shadow: 10px 10px 18px 0px rgba(179, 179, 179, 0.75);
+  -moz-box-shadow: 10px 10px 18px 0px rgba(179, 179, 179, 0.75); }
+  .trabajo h3 {
+    color: #5f6b6e;
+    font-weight: 800;
+    text-align: center;
+    text-decoration: overline; }
+  @media screen and (min-width: 800px) and (max-width: 1200px) {
+    .trabajo {
+      flex-direction: column;
+      height: 30vh; } }
+  @media screen and (min-width: 200px) and (max-width: 799px) {
+    .trabajo {
+      flex-direction: column;
+      height: 30vh; }
+      .trabajo h3 {
+        text-decoration: none; }
+      .trabajo .btn {
+        font-size: 12px;
+        padding: 10px 10px; } }
+
 .logo__Whatsapp {
   position: fixed;
   width: 60px;
   height: 60px;
   bottom: 30px;
-  right: 30px;
+  right: 15px;
   background-color: #25d366;
   color: #FFF;
   border-radius: 50px;

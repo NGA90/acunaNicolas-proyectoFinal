@@ -20,6 +20,7 @@ body {
     border-radius: 5px;
     transition-property: background;
     transition-duration: 0.7s;
+    text-transform: uppercase;
 }
 .btn:hover {
     background-color: $color-hover-btn;
