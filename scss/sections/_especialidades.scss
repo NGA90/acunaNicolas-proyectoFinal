@@ -17,6 +17,10 @@ main{
     text-align: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    animation-name: enter;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+
     
 
         .especialidad__card {

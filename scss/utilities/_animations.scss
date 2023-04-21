@@ -33,3 +33,10 @@
       opacity: 0%;
     }
 }
+
+@keyframes enter {
+  0% {
+    opacity: 0;
+    filter:brightness(2);
+  }
+}

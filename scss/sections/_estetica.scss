@@ -3,6 +3,10 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    animation-name: enter;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+
 
     .depilacion-img {
         opacity: 100%;
@@ -37,6 +41,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    animation-name: enter;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+
 
     .depilacion__Cards{
         display: flex;
@@ -114,6 +122,10 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    animation-name: enter;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+
 
     .tratamientosFaciales-img {
         opacity: 100%;
@@ -144,6 +156,10 @@
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px 0px 20px 0px;
+    animation-name: enter;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+
 
     .tratamientosFaciales__Cards {
         display: flex;
@@ -247,6 +263,10 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    animation-name: enter;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+
 
     .tratamientosCorporales-img {
         opacity: 100%;
@@ -278,6 +298,10 @@
     flex-wrap: wrap;
     justify-content: space-around;
     padding-top: 10px;
+    animation-name: enter;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+
 
     .tratamientosCorporales__Cards {
         display: flex;
